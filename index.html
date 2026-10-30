@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./assets/logo-header.png" alt="mario-header">
+        <a class="home-header" href="index.html">Home</a>
+        <a class="fale-conosco-header" onclick="mostrarForm()" href="#">Fale Conosco</a>
+        <a class="nossos-servicos-header" href="servicos.html">Nossos Serviços</a>
+        <audio id="musica" src="./assets/super-mario-bros-music.mp3" loop autoplay></audio>
+        <button id="btn-audio" aria-label="Tocar música">🔊</button>
+    </div>
+
+    <div class="caixa-principal">
+        <div class="caixa-info-texto">
+            <img src="./assets/logo.png" alt="Logo Mario Bros" class="logo-mario">
+            <p>🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧</p>
+            <br>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="mostrarForm()">Entre em Contato</button>
+        </div>
+
+        <div class="caixa-logo-luigi-mario">
+            <img src="./assets/mario.png" alt="Imagem-Mario-e-Luigi" class="logo-luidi-mario">
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video">
+        </div>
+    </div>
+
+    <div class="caixa-link-whatsapp">
+        <a href="https://wa.me/5519971403119?text=Quero%20um%20servi%C3%A7o." target="_blank" class="link-whatsapp">
+            <img src="./assets/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+
+    <form class="formulario" action="https://formcarry.com/s/CyiKtgExMEr" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="nome" required>
+        <input placeholder="Seu Email" type="email" name="email" required>
+        <textarea placeholder="Digite seu problema aqui..." name="problema"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

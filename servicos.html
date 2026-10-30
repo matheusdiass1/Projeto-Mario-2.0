@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Serviços Disponíveis</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./assets/logo-header.png" alt="mario-header">
+        <a class="home-header" href="index.html">Home</a>
+        <a class="fale-conosco-header" onclick="mostrarForm()" href="#">Fale Conosco</a>
+        <a class="nossos-servicos-header" href="servicos.html">Nossos Serviços</a>
+        <audio id="musica" src="./assets/super-mario-bros-music.mp3" loop autoplay></audio>
+        <button id="btn-audio" aria-label="Tocar música">🔊</button>
+    </div>
+
+
+    <div class="caixa-info-texto-servicos">
+
+        <h1>Serviços Disponíveis:</h1>
+
+        <p>Novas Instalações</p>
+        <p>Reparos em Canos</p>
+        <p>Substituição de Torneiras</p>
+        <p>Desentupimento de Esgotos</p>
+        <p>Manutenção de Aquecedores</p>
+
+        <img src="./assets/backgroud.jpeg" alt="Imagem de fundo" class="imagem-fundo">
+    </div>
+
+    <form class="formulario">
+        <input Placeholder="Seu Nome">
+        <input Placeholder="Seu Email">
+        <textarea Placeholder="Digite seu problema aqui..."></textarea>
+        <button>Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+</body>
+<script src="scripts.js"></script>
+
+</html>
